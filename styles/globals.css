@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@layer utilities {
+  .horizintal-card {
+    @apply flex items-center justify-between rounded overflow-hidden bg-zinc-100 border border-slate-300 hover:bg-zinc-300 cursor-pointer;
+  }
+  .hr-card-info-header {
+    @apply h-full flex flex-col items-start justify-start px-3 py-2;
+  }
+  .mini-card {
+    @apply max-h-full flex  justify-between items-center rounded bg-zinc-100 border border-slate-300 hover:bg-zinc-300 cursor-pointer transition-colors;
+  }
+  .card-media {
+    @apply w-[25%] h-full flex items-center justify-center aspect-square m-0 overflow-hidden;
+  }
+  .card-body-row {
+    @apply flex flex-col items-start justify-start gap-3 p-3 min-h-full w-[80%];
+  }
+  .card-body-col {
+    @apply flex flex-col items-start justify-start p-3 w-full;
+  }
+}
+@tailwind utilities;
